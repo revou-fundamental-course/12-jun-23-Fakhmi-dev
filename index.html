@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan html</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+
+<!-- Bagian Judul dan penjelasan utama -->
+<div class="main">
+    <div class="header">
+        <h1>Konverter Suhu</h1>
+        <p>Ketik jumlah suhu yang ingin anda konversi dalam kotak "Derajat Suhu", setelah itu pilih tujuan konversi dan untuk melihat hasilnya anda bisa melihat pada bagian <b>hasil</b>setelah menge-klik tombol <b>konversi</b>. Untuk mengulang kembali anda cukup menekan tombol <b>reset</b>. Thanks and enjoy...!!</p>
+    </div>
+
+    
+<!-- Bagian form dan button -->
+    <div class="container">
+        <form name="temperatur" id="temp">
+            <label id="temp">Derajat Suhu</label>
+            <input type="text" id="temp"/><br/>
+            <input type="radio" name="pilihan" value="fahrenheit">Konversi ke Fahrenheit<br/>
+            <input type="radio" name="pilihan" value="celcius">Konversi ke Celcius<br/>   
+            <label id="hasil">Hasil: </label>
+            <input type="text" id="resultfield"/><br/>
+            <input type="button" value="Konversi" onclick="convertSuhu()"/>
+            <button type="submit">Reset</button>
+        </form> 
+    </div>
+    <div class="footer">
+    <h3>Cara Konversi Dari Celcius ke Fahrenheit</h3>
+    <p> Konversi suhu celcius ke Fahrenheit bisa dengan rumus F = 5/9 (F - 32) </p>
+
+    <h3>Cara Konversi Dari Fahrenheit ke Celcius</h3>
+    <p> Konversi suhu Fahrenheit ke Celcius bisa dengan rumus F = 9/5 C + 32 </p>
+    </div>
+</div>
+
+</body>
+</html>
